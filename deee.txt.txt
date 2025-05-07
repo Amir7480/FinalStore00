@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  int n;
+  cin>>n;
+  int m1,m2,m3;
+	m1 = n/3600%24;
+	m2 = (n%3600)/60;
+	m3 = n%60;
+  cout << m1 << ":"<< setfill('0') << setw(2) << m2 << ":"<< setfill('0') << setw(2) << m3;
+}
